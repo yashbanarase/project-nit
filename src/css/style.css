@@ -1,0 +1,110 @@
+.dropdown-toggle {
+  margin-left: 20wh;
+}
+.navbar-brand {
+  width: 22%;
+}
+
+.carousel {
+  height: 30vw;
+  overflow: hidden;
+}
+.carousel-item img {
+  width: 100%;
+}
+.department-img {
+  box-shadow: 3px 3px 4px gray;
+}
+.column-job span {
+  font-size: 50px;
+  padding-left: 50px;
+}
+.column-job ul {
+  list-style: none;
+}
+.column-job ul > li {
+  padding-bottom: 10px;
+}
+.column-job ul > li:nth-child(1) {
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+.department-sec {
+  margin-bottom: 70px;
+  margin-top: 70px;
+}
+.why-job {
+  background: rgb(195, 149, 64);
+}
+.container-job {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.sub-container-job {
+  width: 60%;
+}
+.sub-container-job div:nth-child(odd) {
+  display: flex;
+  align-items: center;
+}
+.numbering {
+  font-size: 50px;
+  padding-right: 10px;
+}
+.column-details {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 2px 2px 3px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.column-detail-icon {
+  font-size: 50px;
+}
+.column-detail-offer {
+  font-size: 20px;
+}
+.column-detail-inr {
+  font-size: 28px;
+}
+.column-detail-year {
+  font-size: 20px;
+}
+.dep-details {
+  padding-top: 20px;
+  background-color: rgb(138, 118, 80);
+  color: white;
+}
+.cards {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.footer-ul > ul li {
+  padding-top: 10px;
+}
+.footer-ul > ul li > a {
+  text-decoration: none;
+  color: white;
+}
+.footer-contaner h4 {
+  padding: 20px 10px 20px;
+}
+.footer-contaner {
+  padding: 30px;
+}
+.each-card {
+  height: 55vh;
+  width: 350px;
+  margin: 10px;
+}
+.card-3 img {
+  height: 24vh;
+}
+@media screen and (orientation: portrait) {
+  .department-img {
+    display: none;
+  }
+}

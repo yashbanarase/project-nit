@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <title>Naresh IT</title>
+  </head>
+  <body class="container-fluid">
+    <header>
+      <h1 class="text-center py-2">Naresh Institute and Technologies</h1>
+      <nav
+        class="navbar navbar-expand-md px-3 bg-warning rounded justify-content-between"
+      >
+        <div class="navbar-brand">
+          <img src="./public/images/naresh-it-logo2.png" height="40px" />
+        </div>
+        <button
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+          class="navbar-toggler"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="navbar-collapse collapse justify-content-around"
+          id="navbar"
+        >
+          <ul class="navbar-nav btn-group">
+            <li class="nav-item btn px-3">
+              <a href="./index.html" class="nav-link"
+                ><span class="nav-text">Home</span></a
+              >
+            </li>
+            <li class="nav-item btn px-3">
+              <a href="./about.html" class="nav-link"
+                ><span class="nav-text">About</span></a
+              >
+            </li>
+            <li class="nav-item btn px-3">
+              <a href="services.html" class="nav-link"
+                ><span class="nav-text">Service</span></a
+              >
+            </li>
+            <li class="nav-item btn px-3">
+              <a href="./contactus.html" class="nav-link"
+                ><span class="nav-text">Contact Us</span></a
+              >
+            </li>
+          </ul>
+          <div class="dropdown" style="cursor: pointer">
+            <div data-bs-toggle="dropdown" class="dropdown-toggle">
+              <span class="dropdown-toggle-icon"
+                ><span class="bi bi-box-arrow-in-right pe-2"></span
+                >Account</span
+              >
+            </div>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="./sign-in.html" class="dropdown-item"
+                  ><span class="dropdown-item-text"
+                    ><span class="bi bi-box-arrow-in-right pe-2"></span>Sign
+                    In</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="./sign-up.html" class="dropdown-item"
+                  ><span class="dropdown-item-text"
+                    ><span class="bi bi-person-add pe-2"></span>Sign Up</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="./password.html" class="dropdown-item"
+                  ><span class="dropdown-item-text"
+                    ><span class="bi bi-person-lock pe-2"></span>Change
+                    Password</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="cards">
+      <h2 class="text-center pb-4 fw-bold">SERVICES</h2>
+      <div class="d-flex flex-wrap justify-content-around">
+        <div class="card each-card shadow-lg">
+          <img class="card-img-top" src="./public/images/web-design.jpg" />
+          <div class="card-header fw-bold">WEB DESIGN !!</div>
+          <div class="card-body fst-italic">
+            Online ordering system helps to maintain a Better Business
+            Relationship with your customers, which is a key factor to run any
+            successful business.
+          </div>
+        </div>
+        <div class="card each-card shadow-lg">
+          <img class="card-img-top" src="./public/images/services.jpg" />
+          <div class="card-header fw-bold">IT SERVICES !!</div>
+          <div class="card-body fst-italic">
+            We are ideally located in Larbert meaning we can offer IT support to
+            businesses throughout Scotland. We take the hassle and worry out of
+            your IT system by providing preventative and proactive IT support.
+          </div>
+        </div>
+        <div class="card card-3 each-card shadow-lg">
+          <img class="card-img-top" src="./public/images/marketing.jpg" />
+          <div class="card-header fw-bold">WEB MARKETING !!</div>
+          <div class="card-body fst-italic">
+            We are passionate about digital content creation, strategy and
+            delivery. We deliver results by designing marketing strategies which
+            improve our clients brand visibility.
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer-contaner bg-dark text-white">
+      <h4 class="text-center">Naresh Technologies</h4>
+      <div class="footer-ul d-flex flex-wrap justify-content-around">
+        <ul>
+          <li>
+            <a href="#"><span class="bi bi-facebook"> Facebook</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="bi bi-envelope-fill"> Gmail</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="bi bi-twitter"> Twitter</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="bi bi-youtube"> YouTube</span></a>
+          </li>
+        </ul>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <ul>
+          <li>Name : Naresh Istitute</li>
+          <li>Email : info@nareshit.com</li>
+          <li>Contact : +91-xxxxxxxxxx</li>
+          <li>Address : Sr nagar, Hyderabad, Telangana, India</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

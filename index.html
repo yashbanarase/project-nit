@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <title>Naresh IT</title>
+  </head>
+  <body class="container-fluid">
+    <header>
+      <h1 class="text-center py-2">Naresh Institute and Technologies</h1>
+      <nav
+        class="navbar navbar-expand-md px-3 bg-warning rounded justify-content-between"
+      >
+        <div class="navbar-brand">
+          <img src="./public/images/naresh-it-logo2.png" height="40px" />
+        </div>
+        <button
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+          class="navbar-toggler"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="navbar-collapse collapse justify-content-around"
+          id="navbar"
+        >
+          <ul class="navbar-nav btn-group">
+            <li class="nav-item btn px-3">
+              <a href="./index.html" class="nav-link"
+                ><span class="nav-text">Home</span></a
+              >
+            </li>
+            <li class="nav-item btn px-3">
+              <a href="./about.html" class="nav-link"
+                ><span class="nav-text">About</span></a
+              >
+            </li>
+            <li class="nav-item btn px-3">
+              <a href="services.html" class="nav-link"
+                ><span class="nav-text">Service</span></a
+              >
+            </li>
+            <li class="nav-item btn px-3">
+              <a href="./contactus.html" class="nav-link"
+                ><span class="nav-text">Contact Us</span></a
+              >
+            </li>
+          </ul>
+          <div class="dropdown" style="cursor: pointer">
+            <div data-bs-toggle="dropdown" class="dropdown-toggle">
+              <span class="dropdown-toggle-icon"
+                ><span class="bi bi-box-arrow-in-right pe-2"></span
+                >Account</span
+              >
+            </div>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="./sign-in.html" class="dropdown-item"
+                  ><span class="dropdown-item-text"
+                    ><span class="bi bi-box-arrow-in-right pe-2"></span>Sign
+                    In</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="./sign-up.html" class="dropdown-item"
+                  ><span class="dropdown-item-text"
+                    ><span class="bi bi-person-add pe-2"></span>Sign Up</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="./password.html" class="dropdown-item"
+                  ><span class="dropdown-item-text"
+                    ><span class="bi bi-person-lock pe-2"></span>Change
+                    Password</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div
+        class="carousel slide rounded mt-2"
+        id="carousel-1"
+        data-bs-ride="carousel"
+        style="z-index: 0"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./public/images/carousel-1.jpg" />
+          </div>
+          <div class="carousel-item">
+            <img src="./public/images/carousel-2.jpg" />
+          </div>
+          <div class="carousel-item">
+            <img src="./public/images/carousel-3.jpg" />
+          </div>
+        </div>
+        <button
+          data-bs-slide="prev"
+          data-bs-target="#carousel-1"
+          class="carousel-control-prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          data-bs-slide="next"
+          data-bs-target="#carousel-1"
+          class="carousel-control-next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+        <div
+          class="carouse-indicators position-absolute"
+          data-bs-theme="light"
+          style="bottom: 40px; right: 47%"
+        >
+          <button
+            data-bs-target="#carousel-1"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button data-bs-target="#carousel-1" data-bs-slide-to="1"></button>
+          <button data-bs-target="#carousel-1" data-bs-slide-to="2"></button>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center m-4">
+        <main class="text-center">
+          <button class="btn btn-warning mb-3">
+            Show me what's in this package</button
+          ><br />
+          <button class="btn btn-secondary mb-4">What's the package</button>
+          <p class="fst-italic">
+            <span class="fw-bold">Note<sup>*</sup>:</span> A package is a small
+            container in which a quantity of something is sold. Packages are
+            either small boxes made of thin cardboard, or bags or envelopes made
+            of paper or plastic. When a product is packaged, it is put into
+            containers to be sold.
+          </p>
+        </main>
+      </div>
+      <hr />
+      <div class="d-flex department-sec justify-content-around">
+        <div>
+          <table
+            class="table text-center table-hover table-bordered"
+            style="width: 60vw; height: 35vh"
+          >
+            <tr class="table-secondary">
+              <th>Department</th>
+              <th>Included</th>
+            </tr>
+            <tr>
+              <td>M. Tech</td>
+              <td><span class="bi bi-check-lg"></span></td>
+            </tr>
+            <tr>
+              <td>B. Tech</td>
+              <td><span class="bi bi-check-lg"></span></td>
+            </tr>
+            <tr>
+              <td>MCA</td>
+              <td><span class="bi bi-check-lg"></span></td>
+            </tr>
+          </table>
+        </div>
+        <div
+          class="department-img border border-dark rounded p-1"
+          style="height: 37vh; width: 30vw"
+        >
+          <img
+            src="./public/images/department.jpg"
+            class="rounded"
+            height="100%"
+            width="100%"
+          />
+        </div>
+      </div>
+      <div class="why-job text-white mt-4 pe-2">
+        <h3 class="text-center py-4">What is the Job</h3>
+        <div class="row">
+          <div class="col column-job">
+            <span class="bi bi-keyboard"></span>
+            <ul>
+              <li>Types of jobs</li>
+              <li>Volcanologist. ...</li>
+              <li>Quantum physicist. ...</li>
+              <li>Oceanographer. ...</li>
+              <li>Biomedical engineer. ...</li>
+            </ul>
+          </div>
+          <div class="col column-job">
+            <span class="bi bi-file-earmark-word"></span>
+            <ul>
+              <li>Define job profile</li>
+              <li>
+                Job profile developed by the personnel department of a business
+                might include such things as job responsibilities, required
+                qualifications, advancement prospects.
+              </li>
+            </ul>
+          </div>
+          <div class="col column-job">
+            <span class="bi bi-wikipedia"></span>
+            <ul>
+              <li>Job profile summary</li>
+              <li>
+                Profile summary is a summary of your education, skills, career
+                experiences, and goals.
+              </li>
+            </ul>
+          </div>
+          <div class="col column-job">
+            <span class="bi bi-display"></span>
+            <ul>
+              <li>The IT skills Coding.</li>
+              <li>Communication.</li>
+              <li>Networks.</li>
+              <li>More Information Technology Skills.</li>
+              <li>Time Management.</li>
+            </ul>
+          </div>
+          <div class="col column-job">
+            <span class="bi bi-display"></span>
+            <ul>
+              <li>Freshers key skills</li>
+              <li>Communication.</li>
+              <li>Ability to Work Under Pressure.</li>
+              <li>Decision Making</li>
+              <li>Time Management.</li>
+              <li>Self-motivation.</li>
+              <li>Conflict Resolution.</li>
+              <li>personal skills? Leadership.</li>
+              <li>Adaptability.</li>
+            </ul>
+          </div>
+          <div class="col column-job">
+            <span class="bi bi-display"></span>
+            <ul>
+              <li>Personal skills</li>
+              <li>
+                A skill is the ability to do something well, a certain
+                competence or proficiency. Skills are typically acquired or
+                developed through direct experiences and training, and they can
+                require sustained effort.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="faqs pt-4">
+        <h2 class="text-center pt-4 fst-italic text-decoration-underline mt-4">
+          Friquently Aksed Questions
+        </h2>
+        <div class="container-job">
+          <div class="sub-container-job">
+            <div>
+              <span class="bi bi-1-circle text-primary numbering"></span
+              ><span class="que">Why do you want this job?</span>
+            </div>
+            <div>
+              <p>
+                The hiring manager wants to: Learn about your career goals and
+                how this position fits into your plan. Make sure that you are
+                sincerely interested in the job and will be motivated to perform
+                if hired. Find out what you know about the company, industry,
+                position (and if you took the time to research).
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="./public/images/why-job.jpg" width="300" height="300" />
+          </div>
+        </div>
+        <hr class="w-75 m-4" />
+        <div class="container-job w-100">
+          <div>
+            <img src="./public/images/cv.jpg" width="300" height="300" />
+          </div>
+          <div class="sub-container-job">
+            <div>
+              <span class="bi bi-2-circle text-danger numbering"></span
+              ><span class="que"> What is a CV example?</span>
+            </div>
+            <div>
+              <p>
+                A resume is a brief summary. ... If you were writing your resume
+                you would include only the work information that relates
+                specifically to the job you're applying for, but for a
+                Curriculum Vitae, you would also include all your teaching
+                experience, lab and field work..
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr class="w-75 float-end m-4" />
+        <div class="container-job w-100">
+          <div class="sub-container-job">
+            <div>
+              <span class="bi bi-3-circle text-warning numbering"></span
+              ><span class="que">
+                Do you need a resume for your first job?</span
+              >
+            </div>
+            <div>
+              <p>
+                When writing your first resume with no work experience, it's
+                appropriate to include casual jobs like babysitting, pet
+                sitting, lawn mowing, and shoveling snow. All experience counts
+                and the way you present yourself, your skills, and your assets
+                to a hiring manager begins with a strong resume.
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="./public/images/resume.jpg" width="300" height="300" />
+          </div>
+        </div>
+        <hr class="w-75 m-4" />
+        <div class="container-job w-100">
+          <div>
+            <img src="./public/images/how-job.jpg" width="300" height="300" />
+          </div>
+          <div class="sub-container-job">
+            <div>
+              <span class="bi bi-4-circle text-success numbering"></span
+              ><span class="que"
+                >Why do you think you can do well in this job?</span
+              >
+            </div>
+            <div>
+              <p>
+                I believe I will do well in this job because I have the relevant
+                skills and it is my field of interest. ... I have a confident
+                that I can do well in the job because of self confidence,
+                positive attitude. Previous success also brings self confidence
+                for the future success.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4 text-center" style="margin-bottom: 70px">
+          <button class="btn btn-primary">Request Call Back</button>
+          <button class="btn btn-secondary">FAQ's</button>
+        </div>
+      </div>
+      <div class="dep-details">
+        <h1 class="text-center" style="margin: 20px 0px 40px">
+          Student Department Details
+        </h1>
+        <div
+          class="d-flex flex-wrap justify-content-around"
+          style="margin-bottom: 30px"
+        >
+          <div class="column-details">
+            <span class="bi bi-hourglass-split column-detail-icon"></span>
+            <span class="column-detail-offer">Average Salary Offered</span>
+            <span class="column-detail-inr">INR 7 L </span>
+            <span class="column-detail-year">per annum</span>
+          </div>
+          <div class="column-details">
+            <span class="bi bi-arrow-repeat column-detail-icon"></span>
+            <span class="column-detail-offer">Duration</span>
+            <span class="column-detail-inr">2</span>
+            <span class="column-detail-year">Years</span>
+          </div>
+          <div class="column-details">
+            <span class="bi bi-hand-thumbs-up column-detail-icon"></span>
+            <span class="column-detail-offer">Average Fees Incurred</span>
+            <span class="column-detail-inr">INR 25,000 - 2 L</span>
+            <span class="column-detail-year">per annum</span>
+          </div>
+          <div class="column-details">
+            <span class="bi bi-flag column-detail-icon"></span>
+            <span class="column-detail-offer"
+              >Indian Institute of Technology, [IIT] Kanpur</span
+            >
+            <span class="column-detail-inr">49,035</span>
+            <span class="column-detail-year">Kanpur</span>
+          </div>
+        </div>
+        <div>
+          <p class="text-center pb-4" style="font-size: 12px">
+            * job: A group of homogeneous tasks related by similarity of
+            functions.
+          </p>
+        </div>
+      </div>
+      <div class="cards">
+        <h2 class="text-center pb-4 fw-bold">SERVICES</h2>
+        <div class="d-flex flex-wrap justify-content-around">
+          <div class="card each-card shadow-lg">
+            <img class="card-img-top" src="./public/images/web-design.jpg" />
+            <div class="card-header fw-bold">WEB DESIGN !!</div>
+            <div class="card-body fst-italic">
+              Online ordering system helps to maintain a Better Business
+              Relationship with your customers, which is a key factor to run any
+              successful business.
+            </div>
+          </div>
+          <div class="card each-card shadow-lg">
+            <img class="card-img-top" src="./public/images/services.jpg" />
+            <div class="card-header fw-bold">IT SERVICES !!</div>
+            <div class="card-body fst-italic">
+              We are ideally located in Larbert meaning we can offer IT support
+              to businesses throughout Scotland. We take the hassle and worry
+              out of your IT system by providing preventative and proactive IT
+              support.
+            </div>
+          </div>
+          <div class="card card-3 each-card shadow-lg">
+            <img class="card-img-top" src="./public/images/marketing.jpg" />
+            <div class="card-header fw-bold">WEB MARKETING !!</div>
+            <div class="card-body fst-italic">
+              We are passionate about digital content creation, strategy and
+              delivery. We deliver results by designing marketing strategies
+              which improve our clients brand visibility.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-contaner bg-dark text-white">
+      <h4 class="text-center">Naresh Technologies</h4>
+      <div class="footer-ul d-flex flex-wrap justify-content-around">
+        <ul>
+          <li>
+            <a href="https://facebook.com/nareshit"
+              ><span class="bi bi-facebook"> Facebook</span></a
+            >
+          </li>
+          <li>
+            <a href="mailto:info@nareshit.com"
+              ><span class="bi bi-envelope-fill"> Gmail</span></a
+            >
+          </li>
+          <li>
+            <a href="https://x.com"
+              ><span class="bi bi-twitter"> Twitter</span></a
+            >
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@NareshIT"
+              ><span class="bi bi-youtube"> YouTube</span></a
+            >
+          </li>
+        </ul>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./services.html">Service</a></li>
+          <li><a href="./contactus.html">Contact Us</a></li>
+        </ul>
+        <ul>
+          <li>Name : Naresh Istitute</li>
+          <li>Email : info@nareshit.com</li>
+          <li>Contact : +91-xxxxxxxxxx</li>
+          <li>Address : Sr nagar, Hyderabad, Telangana, India</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <style>
+      .form-label {
+        font-weight: bold;
+      }
+    </style>
+    <title>Naresh IT</title>
+  </head>
+  <body class="container-fluid">
+    <header>
+      <h1 class="text-center py-2">Naresh Institute and Technologies</h1>
+      <nav
+        class="navbar navbar-expand-md px-3 bg-warning rounded justify-content-between"
+      >
+        <div class="navbar-brand">
+          <img src="./public/images/naresh-it-logo2.png" height="40px" />
+        </div>
+        <button
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+          class="navbar-toggler"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="navbar-collapse collapse justify-content-around"
+          id="navbar"
+        >
+          <ul class="navbar-nav btn-group">
+            <li class="nav-item btn px-3">
+              <a href="./index.html" class="nav-link"
+                ><span class="nav-text">Home</span></a
+              >
+            </li>
+            <li class="nav-item btn px-3">
+              <a href="./about.html" class="nav-link"
+                ><span class="nav-text">About</span></a
+              >
+            </li>
+            <li class="nav-item btn px-3">
+              <a href="services.html" class="nav-link"
+                ><span class="nav-text">Service</span></a
+              >
+            </li>
+            <li class="nav-item btn px-3">
+              <a href="./contactus.html" class="nav-link"
+                ><span class="nav-text">Contact Us</span></a
+              >
+            </li>
+          </ul>
+          <div class="dropdown" style="cursor: pointer">
+            <div data-bs-toggle="dropdown" class="dropdown-toggle">
+              <span class="dropdown-toggle-icon"
+                ><span class="bi bi-box-arrow-in-right pe-2"></span
+                >Account</span
+              >
+            </div>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="./sign-in.html" class="dropdown-item"
+                  ><span class="dropdown-item-text"
+                    ><span class="bi bi-box-arrow-in-right pe-2"></span>Sign
+                    In</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="./sign-up.html" class="dropdown-item"
+                  ><span class="dropdown-item-text"
+                    ><span class="bi bi-person-add pe-2"></span>Sign Up</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="./password.html" class="dropdown-item"
+                  ><span class="dropdown-item-text"
+                    ><span class="bi bi-person-lock pe-2"></span>Change
+                    Password</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="card w-50" style="margin: 30px auto">
+      <div class="card-header text-center">
+        <span class="fs-5 fw-bold"> Register Your Account</span>
+      </div>
+      <div class="card-body w-75" style="margin: 30px auto">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Full Name :</label>
+            <input
+              class="form-control"
+              placeholder="Enter Full Name"
+              type="text"
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email :</label>
+            <input
+              class="form-control"
+              placeholder="Enter Email"
+              type="Email"
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Mobile No. :</label>
+            <input
+              class="form-control"
+              placeholder="Enter Mobile Number"
+              type="number"
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">DOB :</label>
+            <input
+              class="form-control"
+              placeholder="Enter Date of Birth"
+              type="date"
+            />
+          </div>
+          <div class="mb-3 d-flex">
+            <div>
+              <label class="form-label">Upload Photo :</label>
+              <input
+                class="form-control"
+                accept=".jpeg,.jpg,.png"
+                type="file"
+              />
+            </div>
+            <div>
+              <img
+                src="./public/images/11539820.png"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Password :</label>
+            <input
+              class="form-control"
+              placeholder="Enter Password"
+              type="password"
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Confirm Password :</label>
+            <input
+              class="form-control"
+              placeholder="Enter Confirm Password"
+              type="password"
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Gender :</label>
+            <input class="form-check-input" type="radio" name="gender" />
+            <label class="form-check-label"> Male</label>
+            <input class="form-check-input" type="radio" name="gender" /><lable
+              class="form-check-label"
+            >
+              Femail</lable
+            >
+          </div>
+          <div class="mb-3">
+            <input class="form-check-input" type="checkbox" /><label
+              class="form-check-label"
+            >
+              &nbsp;I've read and Accept the
+              <span class="text-danger">Terms and Conditions</span></label
+            >
+          </div>
+        </form>
+      </div>
+      <div class="card-footer d-flex justify-content-end">
+        <button class="btn btn-warning me-3">
+          <a style="color: white; text-decoration: none" href="./sign-in.html"
+            ><span class="bi bi-person"> Already have an account</span></a
+          >
+        </button>
+        <button class="btn btn-success bi bi-person-lock">
+          <a style="color: white; text-decoration: none" href="./sign-in.html"
+            >&nbsp;Sign Up</a
+          >
+        </button>
+      </div>
+    </div>
+    <footer class="footer-contaner bg-dark text-white">
+      <h4 class="text-center">Naresh Technologies</h4>
+      <div class="footer-ul d-flex flex-wrap justify-content-around">
+        <ul>
+          <li>
+            <a href="#"><span class="bi bi-facebook"> Facebook</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="bi bi-envelope-fill"> Gmail</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="bi bi-twitter"> Twitter</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="bi bi-youtube"> YouTube</span></a>
+          </li>
+        </ul>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <ul>
+          <li>Name : Naresh Istitute</li>
+          <li>Email : info@nareshit.com</li>
+          <li>Contact : +91-xxxxxxxxxx</li>
+          <li>Address : Sr nagar, Hyderabad, Telangana, India</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
